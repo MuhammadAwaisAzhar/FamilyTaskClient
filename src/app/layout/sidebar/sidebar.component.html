@@ -1,0 +1,17 @@
+  <!-- Left-sec Start-->
+  <div class="left-sec">
+    <button class="btn-gn left-btn-dif" routerLink="/">All Tasks</button>
+   
+    <button 
+    dndDropzone
+    (dndDrop)="onDrop($event,data.memberId)"
+    *ngFor="let data of members" 
+    (click)="setMemberAndRedirect(data)"
+    class="btn-gn left-btn-gr">
+    <span class="left-btn-avatar {{data.avatar}}"></span>
+    {{data.firstName}}
+  </button>
+ 
+    <button class="btn-gn left-btn-dif" routerLink="/members">+ Add Member</button>
+</div>
+<!-- Left-sec End-->

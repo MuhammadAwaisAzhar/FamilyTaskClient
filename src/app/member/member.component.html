@@ -1,0 +1,67 @@
+
+<!-- Right-sec Start-->
+<div class="right-sec">
+    <form (ngSubmit)="addMember()" [formGroup]="MemberForm">
+        <h1>Add Family Member</h1>
+        <div class="member-name">
+            <div class="f-name">
+                <p>First Name</p>
+                <input type="text" required name="f-name" formControlName="fName">
+            </div>
+            <div class="l-name">
+                <p>Last Name</p>
+                <input type="text" required name="l-name" formControlName="lName">
+            </div>    
+        </div>
+        <div class="email-add">
+            <p>Email Address</p>
+            <input type="email" required name="email" formControlName="email">
+        </div>
+        <div class="roles">
+            <p>Roles</p>
+            <input type="text" required name="roles" formControlName="roles">
+        </div>
+        <p>Select Avatar</p>
+        <div class="avatar">
+            <div class="avatar-radio">
+                <label>
+                    <input type="radio" name="avatar" formControlName="avatar" value="red" checked class="red" />
+                    <span></span>
+                  </label>
+                  <label>
+                    <input type="radio" name="avatar" formControlName="avatar" value="orange" class="orange"/>
+                    <span></span>
+                  </label>
+                  <label>
+                    <input type="radio" name="avatar" formControlName="avatar" value="yellow" checked class="yellow" />
+                    <span></span>
+                  </label>
+                  <label>
+                    <input type="radio" name="avatar" formControlName="avatar" value="green" class="green"/>
+                    <span></span>
+                  </label>
+                  <label>
+                    <input type="radio" name="avatar" formControlName="avatar" value="cyan"  class="cyan" />
+                    <span></span>
+                  </label>
+                  <label>
+                    <input type="radio" name="avatar" formControlName="avatar" value="blue" class="blue"/>
+                    <span></span>
+                  </label>
+                  <label>
+                    <input type="radio" name="avatar" formControlName="avatar" value="purple"  class="purple" />
+                    <span></span>
+                  </label>
+                  <label>
+                    <input type="radio" name="avatar" formControlName="avatar" value="brown" class="brown"/>
+                    <span></span>
+                  </label>
+            </div>
+            
+            
+            <button class="form-btn">Add</button>
+        </div>
+    </form>  
+          
+</div>
+<!-- Right-sec End-->

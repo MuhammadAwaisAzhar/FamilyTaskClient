@@ -1,0 +1,23 @@
+<!-- Right-sec Start-->
+<div class="right-sec">
+    <form (ngSubmit)="addTask()" [formGroup]="TaskForm"> 
+   <div class="avatar-2">
+      
+       <input type="text" placeholder="Enter New Task" formControlName="subject" name="subject"  />
+       <button class="form-btn">Add</button>
+      
+   </div>   
+    </form>
+   <div class="chk-input" *ngFor="let task of tasks; let i=index">
+       <input type="checkbox" [checked]="task.isComplete" class="chk-bo" name="chk-bo"/>
+       <input type="text" class="chk-in" value="{{task.subject}}"  name="chk-in" />
+       <span class="left-btn-avatar {{member.avatar}}"></span>
+       <!-- <span class="chk-del"></span> -->
+   </div>
+</div>
+<!-- Right-sec End-->
+
+
+
+
+

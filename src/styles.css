@@ -1,1 +1,315 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+}
+.main-container {
+    width:90%;
+    border-left:2px solid black;
+    border-right:2px solid black;
+    margin: 0 auto;
+}
+.header {
+    padding: 20px;
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: 50px 200px auto;
+    align-items: center;
+    border-bottom: 2px solid rgb(189, 189, 189);
+}
+@media (min-width:320px) and (max-width:767px)
+{
+    .header{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        grid-row-gap: 10px;
+    }
+}
+.header-button {
+    text-align: right;
+}
+.header button {
+    font-size: 20px;
+    background-color: rgb(250, 250, 250);
+    padding: 5px 20px;
+    cursor: pointer;
+    margin-left: 30px;
+    border: none;
+    box-shadow: 1px 4px 6px #888888;
+}
+@media (min-width:320px) and (max-width:767px)
+{
+    .header button{
+        font-size: 15px;
+        padding: 10px;
+        margin: initial;
+    }
+}
+.btn-gn:hover {
+    background-color: rgba(231, 228, 228, 0.904) !important;
+}
+.main-wrapper {
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+@media (min-width:320px) and (max-width:767px)
+{
+    .main-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+.main-wrapper .left-sec {
+    border-right: 2px solid rgb(189, 189, 189);
+    height: 100vh;
+    padding: 40px;
+}
+@media (min-width:768px) and (max-width:1023px)
+{
+    .main-wrapper .left-sec {
+        padding: 20px;
+    }
+}
+@media (min-width:320px) and (max-width:767px)
+{
+    .main-wrapper .left-sec {
+        padding: 10px 5px;
+        height: initial;
+    }
+}
+.main-wrapper .left-sec button{
+    display: grid;
+    grid-template-columns: 30px auto;
+    font-size: 20px;
+    width: 100%;
+    background-color: rgb(250, 250, 250);
+    border:1px solid black;
+    padding: 5px 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border: none;
+    box-shadow: 1px 4px 6px #888888;
+}
+.left-btn-dif{
+    display: block !important;
+}
+@media (min-width:320px) and (max-width:767px)
+{
+    .main-wrapper .left-sec button{
+        font-size: 15px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+}
+.left-btn-avatar {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: blue;
+}
+.orange{
+    background-color: orange;
+}
+.green{
+    background-color: green;
+}
+.yellow{
+    background-color: yellow;
+}
+
+.purple{
+    background-color: purple;
+}
+.cyan{
+    background-color: cyan;
+}
+.chk-del {
+    background-color: orangered;
+    width: 20px;
+    height: 20px;
+}
+.chk-input {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 25px auto 25px 25px;
+    border: 1px solid gray;
+    justify-items: center;
+    align-items: center;
+    padding: 7px;
+    grid-column-gap: 8px;
+    width: 100%;
+}
+.chk-in {
+    font-size: 20px;
+    outline: none;
+}
+.chk-input input {
+    border:none;
+    width: 100%;
+}
+.chk-input[type="checkbox"] {
+    width: 25px;
+    height: 100%;
+}
+.chk-bo {
+    width: 18px;
+    height: 18px;
+    /* margin: 3px !important; */
+}
+.chk-input input {
+    margin: 0;
+    border: none;   
+}
+form {
+    display: grid;
+    grid-row: repeat(auto,6);
+    grid-template-columns: 1fr ;
+    grid-row-gap: 40px;
+}
+@media (min-width:320px) and (max-width:767px)
+{
+    form {
+        justify-items: center;
+        grid-row-gap: 20px;
+    }
+}
+form input {
+    font-size: 25px;
+    width: 100%;
+    background-color: rgb(250, 250, 250);
+    border: 1px solid grey;
+}
+.main-wrapper .right-sec {
+    padding: 50px;
+}
+@media (min-width:320px) and (max-width:767px) {
+    .main-wrapper .right-sec {
+        padding: initial;
+    }
+}
+@media (min-width:320px) and (max-width:767px)
+{
+    .right-sec h1{
+        font-size: 18px;
+    }
+}
+.main-wrapper .right-sec .member-name {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-column-gap:20px ;
+}
+@media (min-width:320px) and (max-width:767px)
+{
+    .main-wrapper .right-sec .member-name {
+        grid-template-columns: 1fr;
+        grid-row-gap: 20px; 
+    }
+}
+.avatar{
+    display: grid;
+    grid-template-columns: auto 120px;
+    align-items: center;
+}
+@media (min-width:320px) and (max-width:767px)
+{
+    .avatar {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        grid-row-gap: 20px;
+    }
+}
+.avatar-2 {
+    display: grid;
+    grid-template-columns: 82% 15%;
+    grid-column-gap: 20px;
+}
+@media (min-width:320px) and (max-width:767px)
+{
+    .avatar-2 {
+        grid-template-columns: 1fr;
+        grid-gap: 15px;
+    }
+}
+@media (min-width:768px) and (max-width:1023px)
+{
+    .avatar-2 {
+        grid-template-columns: 60% 30%;
+    }
+}
+.avatar-2 input {
+    outline: none;
+    font-size: 20px;
+    padding-left: 10px;
+}
+.form-btn{
+      background-color: #f32121;
+      color: white;
+      padding: 10px 30px;
+      border: none;
+      font-size: 15px;
+      cursor: pointer;
+}
+.form-btn:hover {
+      background-color: #c70a0a;
+}
+label{
+    display: inline-block;
+}
+label > input[type="radio"] {
+    display: none;
+}
+label > input[type="radio"] + *::before {
+    content: "";
+    display: inline-block;
+    vertical-align: bottom;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 10px;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-color: gray;
+    cursor: pointer;
+}
+
+label > input.red[type="radio"]:not(:checked) + *::before {
+    background: radial-gradient(red 100%, red 100%, transparent 100%, transparent);
+    border-color: red;
+  }label > input.orange[type="radio"]:not(:checked) + *::before {
+    background: radial-gradient(orange 100%, orange 100%, transparent 100%, transparent);
+    border-color: orange;
+  }label > input.yellow[type="radio"]:not(:checked) + *::before {
+    background: radial-gradient(yellow 100%, yellow 100%, transparent 100%, transparent);
+    border-color: yellow;
+  }label > input.green[type="radio"]:not(:checked) + *::before {
+    background: radial-gradient(green 100%, green 100%, transparent 100%, transparent);
+    border-color: green;
+  }label > input.cyan[type="radio"]:not(:checked) + *::before {
+    background: radial-gradient(cyan 100%, cyan 100%, transparent 100%, transparent);
+    border-color: cyan;
+  }label > input.blue[type="radio"]:not(:checked) + *::before {
+    background: radial-gradient(blue 100%, blue 100%, transparent 100%, transparent);
+    border-color: blue;
+  }
+label > input.purple[type="radio"]:not(:checked) + *::before {
+    background: radial-gradient(purple 100%, purple 100%, transparent 100%, transparent);
+    border-color: purple;
+  }
+  label > input.brown[type="radio"]:not(:checked) + *::before {
+    background: radial-gradient(brown 100%, brown 100%, transparent 100%, transparent);
+    border-color: brown;
+  }
+  /* label > input[type="radio"]:checked + * {
+    color: red;
+}
+label > input[type="radio"]:checked + * {
+    color: red;
+} */
